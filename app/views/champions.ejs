@@ -1,0 +1,25 @@
+<%- include ('partials/header') %>
+    
+<nav>
+    <ul>
+      <li><a href="/Maps">Maps</a></li>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </nav>
+  <h1>Liste des champions</h1>
+  <section>
+    <% for (const champion of champions){ %>
+    <div>
+      <!-- displayName -->
+      <a href="/champions/<%= champion.displayName %>" target="_blank">
+        <!-- fullPortraitV2 -->
+        <img
+          src="https://media.valorant-api.com/agents/<%= champion.uuid %>/displayicon.png"
+          alt="<%= champion.displayName %>"
+        />
+      </a>
+    </div>
+    <% } %>
+  </section>
+
+<%- include ('partials/footer') %>
