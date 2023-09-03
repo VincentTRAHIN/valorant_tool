@@ -1,0 +1,36 @@
+<%- include ('partials/header') %>
+
+    <!-- displayName -->
+    <h1><%= foundMap.displayName %></h1>
+    <div class="container">
+      <div class="left-section">
+        <!-- splash -->
+        <img
+          src="<%= foundMap.splash %>"
+          alt="Visuel"
+        />
+        <!-- displayIcon -->
+        <img
+          src="<%= foundMap.displayIcon %>"
+          alt="Carte d'orientation"
+        />
+      </div>
+      <div class="right-section">
+        <h2>Liste des spots</h2>
+        <ul>
+          <% for (callout of foundMap.callouts) { %>
+          <li>
+            <!-- callouts > regionName && superRegionName -->
+            <h3><%= callout.regionName %> <span><%= callout.superRegionName %></span></h3>
+            <ol>
+              <!-- callouts > location.x && location.y -->
+              <li><%= callout.location.x %></li>
+              <li><%= callout.location.y %></li>
+            </ol>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+
+<%- include ('partials/footer') %>

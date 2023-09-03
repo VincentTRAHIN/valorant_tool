@@ -1,0 +1,23 @@
+<%- include ('partials/header') %>
+
+    <h1>Liste des Maps</h1>
+    <section>
+      <!-- splash pour le style ;) -->
+      <% for (const map of maps){ %>
+      <div
+        style="
+          background-image: url('<%= map.splash %>');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <!-- displayName -->
+        
+        <a href="/maps/<%= map.displayName.toLowerCase() %>" target="_blank"><h2><%= map.displayName.toLowerCase() %></h2></a>
+      </div>
+      <% } %>
+    </section>
+  </body>
+</html>
+
+<%- include ('partials/footer') %>

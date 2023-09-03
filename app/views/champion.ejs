@@ -1,0 +1,49 @@
+<%- include ('partials/header') %>
+
+    <!-- displayName -->
+    <h1><%= foundChampion.displayName %></h1>
+    <p>
+      <i>
+        <!-- description -->
+        <%= foundChampion.description %></i
+      >
+    </p>
+
+    <article class="content">
+      <section class="champion">
+        <section class="description">
+          <!-- fullPortraitV2 -->
+          <img
+            src="<%= foundChampion.fullPortraitV2 %>"
+            alt=""
+            srcset=""
+          />
+        </section>
+      </section>
+
+      <section class="abilities">
+        <h2>Liste des capacités</h2>
+        <ul>
+            <% for (abilities of foundChampion.abilities) { %>  
+          <li>
+            <!-- abilities >  displayName -->
+            <h3><%= abilities.displayName %></h3>
+            <div>
+              <!-- abilities >  displayIcon -->
+              <img
+                src="<%= abilities.displayIcon %>"
+                alt=""
+                srcset=""
+              />
+              <!-- abilities >  description -->
+              <p>
+                <%= abilities.description %>
+              </p>
+            </div>
+          </li>
+          <% } %>
+        </ul>
+      </section>
+    </article>
+
+<%- include ('partials/footer') %>
