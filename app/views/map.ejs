@@ -17,8 +17,9 @@
       </div>
       <div class="right-section">
         <h2>Liste des spots</h2>
+        <% if (foundMap.callouts && Array.isArray(foundMap.callouts)) { %>
         <ul>
-          <% for (callout of foundMap.callouts) { %>
+            <%   foundMap.callouts.forEach( (callout) => { %>
           <li>
             <!-- callouts > regionName && superRegionName -->
             <h3><%= callout.regionName %> <span><%= callout.superRegionName %></span></h3>
@@ -28,7 +29,7 @@
               <li><%= callout.location.y %></li>
             </ol>
           </li>
-          <% } %>
+          <% })} %>
         </ul>
       </div>
     </div>

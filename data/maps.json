@@ -1459,7 +1459,7 @@
     "uuid": "ee613ee9-28b7-4beb-9666-08db13bb2244",
     "displayName": "The Range",
     "coordinates": "45°26'FF'N,12°20'Q'E",
-    "displayIcon": null,
+    "displayIcon": "Image unavailable at the moment",
     "listViewIcon": "https://media.valorant-api.com/maps/ee613ee9-28b7-4beb-9666-08db13bb2244/listviewicon.png",
     "splash": "https://media.valorant-api.com/maps/ee613ee9-28b7-4beb-9666-08db13bb2244/splash.png",
     "assetPath": "ShooterGame/Content/Maps/Poveglia/Poveglia_PrimaryAsset",
@@ -1468,7 +1468,7 @@
     "yMultiplier": 0,
     "xScalarToAdd": 0,
     "yScalarToAdd": 0,
-    "callouts": null
+    "callouts": "Data unavailable at the moment"
   },
   {
     "uuid": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
