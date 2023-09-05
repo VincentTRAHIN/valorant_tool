@@ -10,10 +10,12 @@
           alt="Visuel"
         />
         <!-- displayIcon -->
+        <% if (foundMap.displayIcon && Array.isArray(foundMap.displayIcon)) { %>
         <img
           src="<%= foundMap.displayIcon %>"
           alt="Carte d'orientation"
         />
+        <% } %>
       </div>
       <div class="right-section">
         <h2>Liste des spots</h2>
