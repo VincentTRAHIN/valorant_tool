@@ -1,5 +1,9 @@
 const { Router } = require("express");
 const router = Router();
+const handle404 = require("../middleware/handle404.js");
+
+
+
 
 router.get("/", (req, res) => {
     const { champions } = req.app.locals;
@@ -47,9 +51,13 @@ router.get("/maps/:mapName", (req, res) => {
         const CSS = "map";
         res.render('map', {foundMap, title, CSS});
     } else {
-        res.status(404).send("notFound");
+        res.status(404).render("notFound");
     }
     
+});
+
+router.use((req, res) => {
+    res.status(404).render('notFound');
 });
 
 
