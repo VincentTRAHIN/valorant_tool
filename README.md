@@ -5,10 +5,10 @@
 ## Some examples :
 
 <p align="center">
-  <img src="/public/images/championPageExample.png" alt="championPageExample">
-  <img src="/public/images/championsPage.png" alt="championsPageExample">
-  <img src="/public/images/mapPage.png" alt="mapPageExample">
-  <img src="/public/images/mapsPage.png" alt="mapsPageExample">
+  <img src="../public/images/championPageExample.png" alt="championPageExample">
+  <img src="../public/images/championsPage.png" alt="championsPageExample">
+  <img src="../public/images/mapPage.png" alt="mapPageExample">
+  <img src="../public/images/mapsPage.png" alt="mapsPageExample">
 </p>
 
 ## Description :
