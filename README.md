@@ -37,7 +37,7 @@ _________________________________________________________________________
 
 - Navigate to the project's root directory.
 - Run the application using: `npm start`
-- Open a browser and go to `http://localhost:3000` to access the Pokédex.
+- Open a browser and go to `http://localhost:3000` to access the guide.
 _________________________________________________________________________
 
 ### Help
