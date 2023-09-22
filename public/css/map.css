@@ -117,3 +117,56 @@ h3 > span {
   text-align: start;
   color: #fff;
 }
+
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: rgb(55, 240, 163);
+    position: absolute;
+    width: 100%;
+  }
+
+  nav > ul {
+    padding: 0;
+    
+  }
+  
+  nav > ul > li > a {
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 3.8rem;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 1.5rem;
+  }
+
+  .left-section {
+    width: 85%;
+    max-height: 90vh;
+    overflow-y: scroll;
+    margin-bottom: 1.5rem;
+  }
+  
+  .left-section img {
+    text-align: center;
+    width: 95%;
+  }
+  
+  .right-section {
+    width: 65%;
+    text-align: center;
+  }
+  
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+}

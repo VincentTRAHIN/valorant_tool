@@ -90,3 +90,40 @@ section > div:hover {
   background: #ff4656ff;
   border-radius: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: rgb(55, 240, 163);
+    position: absolute;
+    width: 100%;
+  }
+
+  nav > ul {
+    padding: 0;
+    
+  }
+  
+  nav > ul > li > a {
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 3.8rem;
+  }
+
+  section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 20vh;
+  }
+
+  section {
+    margin-top: 1.5rem;
+  }
+
+}

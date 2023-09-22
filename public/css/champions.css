@@ -20,6 +20,7 @@ nav > ul > li > a {
   text-decoration: none;
   color: #ff4656ff;
   margin-right: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -76,4 +77,45 @@ section > div:hover {
 ::-webkit-scrollbar-thumb {
   background: #ff4656ff;
   border-radius: 10px;
+}
+
+/* Responsive Styles for Mobile */
+
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: rgb(55, 240, 163);
+    position: absolute;
+    width: 100%;
+  }
+
+  nav > ul {
+    padding: 0;
+    
+  }
+  
+  nav > ul > li > a {
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 3.8rem;
+  }
+
+  section {
+    margin-top: 1.5rem;
+  }
+
+  section > div {
+    width: 25%;
+    margin: 5px 10px;
+  }
+
+}
+
+/* Responsive Styles for Tablet */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
 }

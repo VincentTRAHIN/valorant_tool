@@ -26,7 +26,7 @@ ul {
 }
 
 ul {
-  margin-top: 100px;
+  margin-top: 2rem;
 }
 
 a {
@@ -38,4 +38,29 @@ a {
 
 li {
   margin: 5px 0;
+}
+
+/* Responsive Styles for Mobile */
+
+@media only screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  ul {
+    margin-top: 2rem;
+  }
+  
+  a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive Styles for Tablet */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  ul {
+    margin-top: 2rem;
+  }
 }

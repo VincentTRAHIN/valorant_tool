@@ -111,3 +111,54 @@ h3 {
   margin: 10px 0;
   color: rgb(255, 255, 255);
 }
+
+/* Responsive Styles for Mobile */
+
+@media only screen and (max-width: 768px) {
+  
+  nav {
+    background-color: rgb(55, 240, 163);
+    position: absolute;
+    width: 100%;
+  }
+
+  nav > ul {
+    padding: 0;
+    margin-right: 2rem;
+    
+  }
+  
+  nav > ul > li > a {
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 3.8rem;
+    margin-right: 2rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+  }
+
+  .abilities {
+    max-width: 100%;
+    text-align: start;
+  }
+
+  p {
+    width: 85%;
+  }
+
+}
+
+/* Responsive Styles for Tablet */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+ 
+}
